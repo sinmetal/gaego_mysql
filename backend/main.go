@@ -21,7 +21,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 	mysql.RegisterDial("external", dial)
 
-	db, err := sql.Open("mysql", "root:d2QY.usK@external(35.188.168.168:3306)/db1")
+	db, err := sql.Open("mysql", "user:password@external(IPAddr:3306)/dbname")
 	if err != nil {
 		panic(err.Error())
 	}
