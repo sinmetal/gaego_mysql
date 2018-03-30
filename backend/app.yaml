@@ -1,0 +1,9 @@
+application: souzoh-p-sinmetal-tokyo
+module: default
+version: mysql
+runtime: go
+api_version: go1.9
+
+handlers:
+- url: /.*
+  script: _go_app
